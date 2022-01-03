@@ -78,8 +78,8 @@ while True:
                             print("2 Fingers Detected")
 
 
-                            fromaddr = "elhstudentfair@gmail.com"
-                            toaddr = "mickirusu@gmail.com"
+                            fromaddr = "YOUR EMAIL"
+                            toaddr = "TO EMAIL"
 
 
                             msg = MIMEMultipart()
@@ -87,12 +87,10 @@ while True:
                             msg['From'] = fromaddr
 
                             msg['To'] = toaddr
-                            msg['Subject'] = "High School Fair Photo"
+                            msg['Subject'] = "SUBJECT OF EMAIL"
 
                             body = """
-                                Hi, Thank you for being interested ELHS for your High School next year. Please enjoy the amazing photo you took with our amazing students and staff.
-
-                                Michael
+                                BODY OF EMAIL
 
                                 """
 
@@ -100,8 +98,8 @@ while True:
                             msg.attach(MIMEText(body, 'plain'))
 
 
-                            filename = "High School Fair Photo with ELHS"
-                            attachment = open("/Users/michael/Desktop/SendPhotoUsingHandTracking/ELHS.png", "rb")
+                            filename = "THE NAME OF THE FILE YOU WANT TO SEND"
+                            attachment = open("/PATH OF PHOTO YOU WANT TO SEND", "rb")
 
 
                             p = MIMEBase('application', 'octet-stream')
@@ -122,7 +120,7 @@ while True:
                             s.starttls()
 
 
-                            s.login(fromaddr, "ELHSisBestandNothingCanBeatit107")  
+                            s.login(fromaddr, "PASSWORD FOR EMAIL")  
                             # dydgur-buhsiq-rugCo6
 
 
